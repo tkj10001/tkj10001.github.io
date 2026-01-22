@@ -17,6 +17,12 @@
             scroll-behavior: smooth;
         }
 
+        .head {
+            height: fit-content;
+            top: 0;
+            z-index: 100;
+        }
+
         body {
             overflow: auto;
             background-color: white;
@@ -34,7 +40,6 @@
             background-position: center 20%;
             background-color: black;
             font-family: 'STIX Two Text', serif;
-            /* opacity: 0.8; */
         }
 
         .headerbar {
@@ -79,7 +84,7 @@
 
         </style>
 
-        <div class="container">
+<div class="container">
             <div class="head">
                 <div class="headerbar">
                     <p><b>Here to help those in need</b></p>
@@ -87,23 +92,21 @@
 
                     <div class="header">
 
-                        <h1>Your Mental Health Matters</h1>
-                        <p>Your mental health means everything, just as everyone else's does.</p>
+                        <div class="container_box">
+                            <div class="searchbar"><i class="ri-search-line"></i><input placeholder="Search.."></div>
+                        </div>
+
+                        <div class="container_box">
+                                <div class="logo">
+                                    <h1 style="margin-top: 0px; margin-bottom: 10px;">MHAFOKLAHOMA</h1>
+                                    <p style="margin: 0px;">Mental Health Awareness for Oklahoma</p>
+                                </div>
+                        </div>
+
+                            <h1>Your Mental Health Matters</h1>
+                            <p>Your mental health means everything, just as everyone else's does.</p>
 
                         <div class="button"><a href="fourms.html"><button style="margin-top: 30px;">SCHEDULE AN APPOINTMENT</button></a></div>
-
-                    </div>
-
-                    <div class="container_box">
-
-                        <div class="searchbar"><i class="ri-search-line"></i><input placeholder="Search.."></div>
-                
-                            <div class="logo">
-                                <h1 style="margin-top: 0px; margin-bottom: 10px;">MHAFOKLAHOMA</h1>
-                                <p style="margin: 0px;">Mental Health Awareness for Oklahoma</p>
-                            </div>
-
-                        </div>
 
                     </div>
             </div>
@@ -120,30 +123,41 @@
     <h1>Welcome to MHAFOKLAHOMA</h1>
             <p>We are dedicated to providing support and resources for mental health in Oklahoma. Our mission is to raise awareness, reduce stigma, and offer assistance to those in need.</p>
                 <br>
-    
-        <h2>Our Services</h2>
-    <div class="info">
-            <ul>
-                <li>Counseling and Therapy Sessions</li>
-                <li>Support Groups</li>
-                <li>Resource Referrals</li>
-    </div>
-    
-            </ul>
-        <h2>Get Involved</h2>
-    <div class="info">
-            <p>Join us in our mission to promote mental health awareness. Volunteer, donate, or participate in our events to make a difference in the community.</p>
+
+    <div class="services-involved">
+        <div class="events">
+            <h2>Our Services</h2>
+            <div class="box" style="text-align: left;">
+                <ul>
+                    <li>Counseling and Therapy Sessions</li>
+                    <li>Support Groups</li>
+                    <li>Resource Referrals</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="events">
+            <h2>Get Involved</h2>
+            <div class="box">
+                <p>
+                    Join us in our mission to promote mental health awareness.
+                    Volunteer or donate in our events to make a
+                    difference in the community.
+                </p>
+            </div>
+        </div>
     </div>
 
     <br><br>
 
-<section class="section">
+        <section class="section">
             <h2>Testimonials</h2>
             <hr>
             <h1>What some of our patients say about us</h1>
         </section>
 
     <div class="testimonials">
+
         <div class="testimonial">
             <div class="profile"><img src="images/pexels-doquyen-1520760.jpg" width="100px" height="100px" alt="Person 1"></div>
             <br>
@@ -176,6 +190,7 @@
             <div class="quoteR"><span><i class="ri-double-quotes-r"></i></span></div>
             <p>- Emily R.</p>
         </div>
+
     </div>
 
     <br><br><br>
@@ -184,15 +199,21 @@
 
     <div class="footer">
 
-        <div class="icons"></div>
-
         <h1>Contact Us</h1>
         <p>Created by Mental Health Awareness for Oklahoma</p>
 
-        <br>
+            <br>
+                <div class="icons"><i class="ri-facebook-circle-fill"></i><i class="ri-instagram-fill"></i>
+                    <i class="ri-discord-fill"></i><i class="ri-twitter-x-fill"></i></div>
+                    
+                <p>@mhaforOk2026</p>
         
+            <br>
+
         <h4>Where we are located?</h4>
         <p>17th street Rain Booth Ave, Yukon Oklahoma 73099 </p>
+
+        <p>All Rights Reserved &copy;</p>
 
     </div>
 </div>
