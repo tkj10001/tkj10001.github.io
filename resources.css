@@ -12,14 +12,24 @@ a {
     text-decoration: none;
 }
 a:hover {
-    text-shadow: 1px 1px 2px rgb(112, 112, 112);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.475);
+}
+a:link {
+    color: rgb(20, 228, 83);
+}
+a:visited {
+    color: rgb(133, 209, 114);
+}
+a:active{
+    color: rgba(93, 255, 53, 0.527);
 }
 .tag {
   display: block;
-  width: 100%;
+  width: 80%;
   border: 2px solid #555;
   background-color: rgb(135, 125, 245);
   padding: 12px;
+  margin-right: 12px;
   margin-bottom: 12px;
   border-radius: 8px;
   text-align: left;

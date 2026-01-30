@@ -23,11 +23,9 @@
         }
     
     body {
-        padding-right: 50px;
-        padding-left: 50px;
         background-color: white;
         font-size: 25px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'STIX Two Text', Helvetica, sans-serif;
         margin: 0%;
         text-align: center;
     }
@@ -40,15 +38,7 @@
         background-position: center 20%;
         background-color: black;
         font-family: 'STIX Two Text', serif;
-    }
-
-    .headerbar {
-        overflow: hidden;
-        text-align: center;
-        background-color: black;
-        color: white;
-        margin-top: 0%;
-        margin-bottom: 0%;
+        height: 200px;
     }
 
     .navbar {
@@ -82,13 +72,34 @@
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 375px;   /* phone width */
+    height: 667px;  /* phone height */
+  }
+
+  header {
+    height: 80px;
+    line-height: 80px;
+    background: lightblue;
+  }
+
+  main {
+    height: 507px;
+    line-height: 507px;
+    background: lightgray;
+  }
+
+  footer {
+    height: 80px;
+    line-height: 80px;
+    background: lightgreen;
+  }
+}
     </style>
 
 <div class="container">
             <div class="head">
-                <div class="headerbar">
-                    <p><b>Here to help those in need</b></p>
-                </div>
 
                     <div class="header">
 
@@ -106,8 +117,6 @@
                             <h1>Your Mental Health Matters</h1>
                             <p>Your mental health means everything, just as everyone else's does.</p>
 
-                        <div class="button"><a href="fourms.html"><button style="margin-top: 30px;">SCHEDULE AN APPOINTMENT</button></a></div>
-
                     </div>
             </div>
 
@@ -117,39 +126,190 @@
                     <b><a href="RESOURCES.html" style="color: white; padding: 15px 30px; text-decoration: none;">Resources</a></b>
                 </div>
             
-
     <body>
         <h1>Meet Our Team</h1>
         <p>We are here to help you with your mental health journey.</p>
         <hr style="border: 1px solid black;">
 
-        <div class="section">
-            <div class="box">
-                <div class="picture">    
-                    <img src="images/T1.jpg" alt="Therapist 1" width="200" height="275">
-                </div>
-                    <h2>Katty Nelson - Licensed Therapist</h2>
+    <div class="section">
+        <div class="box">
+
+                <h2>Katty Nelson - Licensed Therapist</h2>
+
+            <div class="picture">    
+                <img src="images/T1.jpg" alt="Therapist 1" width="200" height="275">
+
+                <p>As a therapist, I focus on helping clients rebuild self-esteem and navigate relationship challenges. 
+                    I became a therapist because I’ve always been passionate about understanding emotions and supporting others during difficult moments. 
+                    Seeing people grow into stronger, more confident versions of themselves is what motivates me every day.</p>
+            </div>
+                
+        </div>
+
+        <div class="box">
+
+                    <h2>Aliza Carson - Licensed Counselor</h2>
+
+            <div class="picture">    
+                <img src="images/T2.jpg" alt="Therapist 2" width="200" height="275">
+
+                <p>As a counselor, I work closely with individuals to help them navigate emotional challenges, stress, and personal growth.
+                     I became a counselor because I’ve always believed in the power of guidance and supportive conversation. 
+                     My goal is to provide a safe space where clients feel heard, understood, and empowered to move forward.</p>
+            </div>
+
+        </div>
+
+        <div class="box">
+
+                    <h2>John Smith - Licensed Therapist</h2>
+
+            <div class="picture">    
+                <img src="images/T3.jpg" alt="Therapist 3" width="450" height="275">
+
+                <p style="margin-top: 0px;">I work as a licensed therapist helping individuals manage anxiety, depression, and major life transitions.
+                    I became a therapist because growing up I saw how many people struggled in silence, especially men who felt they couldn’t speak up.
+                    I wanted to be someone who listens without judgment and helps people find healthier ways to cope and heal.</p>
+            </div>
+
+        </div>
+
+        <div class="box">
+                    <h2>Tucker Christensen - Licensed Physician</h2>
+
+            <div class="picture">    
+                <img src="images/T4.jpg" alt="Therapist 4" width="200" height="275">
+
+                <p>As a physician, I focus on both physical and mental well-being to help patients achieve better overall health. 
+                    I chose this career because I wanted to make a direct, lasting impact on people’s lives through care and prevention. 
+                    Supporting patients through diagnosis, treatment, and recovery is what drives my work every day.</p>
+            </div>
+
+        </div>
+
+        <div class="box">
+
+                    <h2>Jaylin Watkins - Licensed Social Worker</h2>
+
+            <div class="picture">    
+                <img src="images/T5.jpg" alt="Therapist 5" width="200" height="275">
+
+                <p>As a social worker, I support individuals and families by connecting them with resources and advocating for their well-being. 
+                    I became a social worker because I wanted to help people overcome social, emotional, and economic barriers. 
+                    My passion is empowering communities and helping clients build more stable, healthy lives.</p>
             </div>
         </div>
 
+        <div class="box">
+
+                    <h2>Alec Enriquez - Licensed Physician</h2>
+
+            <div class="picture">    
+                <img src="images/T6.jpg" alt="Therapist 6" width="200" height="275">
+
+                <p>I work as a physician providing comprehensive medical care while emphasizing the importance of mental health in physical wellness. 
+                    I became a doctor out of a strong desire to help others and solve complex health challenges. 
+                    Building trust with patients and delivering compassionate care is central to my practice.</p>
+            </div>
+        </div>
+
+    </div>
+        <hr style="border: 1px solid black;">
+
+            <form id="signupForm" class="signup-form">
+
+                <h2>Create an Account</h2>
+
+            <label for="appointmentDate">Select Appointment Date</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+        <br><br>
+
+        <label for="therapist">Choose a Therapist</label>
+            <select id="therapist" name="therapist" required>
+
+        <br>
+
+                <option value="">-- Select a specialist --</option>
+                <option value="T1">Katty Nelson - Licensed Therapist</option>
+                <option value="T2">Aliza Carson - Licensed Counselor</option>
+                <option value="T3">John Smith - Licensed Therapist</option>
+                <option value="T4">Tucker Christensen - Licensed Physician</option>
+                <option value="T5">Jaylin Watkins - Licensed Social Worker</option>
+                <option value="T6">Alec Enriquez - Licensed Physician</option>
+
+        </select>
+
+  <button type="submit">Create Account</button>
+</form>
+
+        <br>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p id="popupMessage">
+                Thank you for creating an account with us! <br>
+                We have scheduled an appointment for you.
+            </p>
+    <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+        <script>
+  const form = document.getElementById("signupForm");
+  const popup = document.getElementById("popup");
+  const popupMessage = document.getElementById("popupMessage");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const rawDate = document.getElementById("appointmentDate").value;
+    const formattedDate = new Date(rawDate).toDateString();
+
+    popupMessage.innerHTML = `
+      Thank you for creating an account with us! <br>
+      Your appointment has been scheduled for <strong>${formattedDate}</strong>.
+    `;
+
+    popup.style.display = "flex";
+    form.reset();
+  });
+
+  function closePopup() {
+    popup.style.display = "none";
+  }
+</script>
 
 
-
-
-
-<h4>Personal info</h4>
-            <fieldset>
-              <label for="Username">Username</label>
-              <input type="text" name="Username" id="Username"> <br/>
-
-              <label for="email">Email</label>
-              <input type="email" name="Email" id="email"> <br/>
-
-              <label for="First and last name">First and last name</label>
-              <input type="text" name="name" id="name"> <br/>
-            </fieldset>
-        <textarea></textarea>
 
     </body>
+    <div class="footer">
+
+        <h1>Contact Us</h1>
+        <p>Created by Mental Health Awareness for Oklahoma</p>
+
+            <br>
+                <div class="icons"><i class="ri-facebook-circle-fill"></i><i class="ri-instagram-fill"></i>
+                    <i class="ri-discord-fill"></i><i class="ri-twitter-x-fill"></i></div>
+                    
+                <p>@mhaforOk2026</p>
+        
+            <br>
+
+        <h4>Where we are located?</h4>
+        <p>17th street Rain Booth Ave, Yukon Oklahoma 73099 </p>
+
+        <p>All Rights Reserved &copy;</p>
+
+    </div>
 </div>
 </html>

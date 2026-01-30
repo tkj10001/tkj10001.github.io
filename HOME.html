@@ -40,15 +40,7 @@
             background-position: center 20%;
             background-color: black;
             font-family: 'STIX Two Text', serif;
-        }
-
-        .headerbar {
-            overflow: hidden;
-            text-align: center;
-            background-color: black;
-            color: white;
-            margin-top: 0%;
-            margin-bottom: 0%;
+            height: 200px;
         }
 
         .navbar {
@@ -82,14 +74,35 @@
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 375px;   /* phone width */
+    height: 667px;  /* phone height */
+  }
+
+  header {
+    height: 80px;
+    line-height: 80px;
+    background: lightblue;
+  }
+
+  main {
+    height: 507px;
+    line-height: 507px;
+    background: lightgray;
+  }
+
+  footer {
+    height: 80px;
+    line-height: 80px;
+    background: lightgreen;
+  }
+}
+
         </style>
 
 <div class="container">
             <div class="head">
-                <div class="headerbar">
-                    <p><b>Here to help those in need</b></p>
-                </div>
-
                     <div class="header">
 
                         <div class="container_box">
